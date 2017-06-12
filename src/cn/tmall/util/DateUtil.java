@@ -1,0 +1,20 @@
+package cn.tmall.util;
+
+import java.sql.Date;
+import java.sql.Timestamp;
+
+public class DateUtil {
+    public static Timestamp d2t(Date d){
+        if (d==null){
+            return null;
+        }
+        return new Timestamp(d.getTime());
+    }
+
+    public static Date t2d(Timestamp t){
+        if (t==null){
+            return null;
+        }
+        return new Date(t.getTime());
+    }
+}
